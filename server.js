@@ -14,6 +14,7 @@ app.use(cors({ origin: 'http://localhost:5173' }));
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/chat", require("./routes/chatRoutes"));
 app.use("/api/affirmations", require("./routes/affirmationRoutes"));
+app.use("/api/journals", require("./routes/journalRoutes"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
